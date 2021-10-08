@@ -5,8 +5,8 @@
 body{
     margin: 25px;
     transition: .5s;
-    border:1px solid red;
     height: 90vh;
+    border: 1px solid red;
 }
 .menuH{
     position: cticky;
