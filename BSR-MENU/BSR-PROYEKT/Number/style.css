@@ -1,0 +1,120 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: black;
+    animation: col .5s infinite linear;
+    transition: .5s;
+    height: 90vh;
+}
+.recor{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.recor div{
+    width: 80px;
+    height: 80px;
+    margin: 15px;
+    border-radius: 40px;
+    color: white;
+    transition: 1s;
+}
+.fot{
+    position: fixed;
+    bottom: 20px;
+    color: white;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.fot h1{
+    margin: 10px;
+    padding: 30px;
+    font-size: 40px;
+    border-radius: 10px;
+    box-shadow: inset 0px 0px 20px 5px red;
+}
+@keyframes col{
+    0%{
+        box-shadow: inset 0px 0px 15px 5px  red;
+    }
+    25%{
+        box-shadow: inset 0px 0px 15px 5px  orange;
+    }
+    50%{
+        box-shadow: inset 0px 0px 15px 5px  yellow;
+    }
+    75%{
+        box-shadow: inset 0px 0px 15px 5px  green;
+    }
+    100%{
+        box-shadow: inset 0px 0px 15px 5px  blue;
+    }
+}
+.fot h1:active{
+    box-shadow: 0px 0px 10px 5px red, 0px 0px 20px red;
+}
+.divB{
+    animation: col .5s infinite linear;
+    transition: 1s;
+}
+.divE{
+    transition: 1s;
+    animation: col .5s infinite linear;
+}
+.divU{
+    transition: 1s;
+    animation: col .5s infinite linear;
+}
+.divT{
+    transition: 1s;
+    animation: col .5s infinite linear;
+}
+.divV{
+    animation: col .5s infinite linear;
+    transition: 1s;
+}
+.divA{
+    animation: col .5s infinite linear;
+    transition: 1s;
+}
+.divJ{
+    animation: col .5s infinite linear;
+    transition: 1s;
+}
+.divS{
+    animation: col .5s infinite linear;
+    transition: 1s;
+}
+.divTO{
+    animation: col .5s infinite linear;
+    transition: 1s;
+}
+.divON{
+    animation: col .5s infinite linear;
+    transition: 1s;
+}
+.divOB{
+    animation: col .5s infinite linear;
+    transition: 1s;
+}
+.divOE{
+    animation: col .5s infinite linear;
+    transition: 1s;
+}
+.divOU{
+    animation: col .5s infinite linear;
+    transition: 1s;
+}
+.divOT{
+    animation: col .5s infinite linear;
+    transition: 1s;
+}
+.divOV{
+    animation: col .5s infinite linear;
+    transition: 1s;
+}
