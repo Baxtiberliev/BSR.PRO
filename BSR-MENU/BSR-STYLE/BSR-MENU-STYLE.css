@@ -1,0 +1,120 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    margin: 25px;
+    transition: .5s;
+    height: 90vh;
+    border: 1px solid red;
+}
+.menuH{
+    position: cticky;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: white;
+    font-size: 45px;
+    border: 3px solid black;
+    border-radius: 25px;
+    transition: .5s;
+}
+.ti-settings{
+    margin-right: 25px;
+    padding: 20px;
+}
+.ti-arrow-right{
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 20px;
+    margin: 10px;
+    font-size: 50px;
+    border-radius: 20px;
+}
+.logo{
+    height: 70px;
+    margin-left: 25px;
+}
+.menu-sec{
+    margin: 20px 0;
+    display: flex;
+    justify-content: center;
+}
+.menu-card{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 60px;
+    row-gap: 60px;
+}
+.pro-img{
+    height: 250px;
+    border-radius: 20px;
+}
+.setingCard{
+    position: fixed;
+    top: 15%;
+    bottom: 15%;
+    left: 15%;
+    right: 15%;
+    visibility: hidden;
+}
+.setingCardRen{
+    position: fixed;
+    top: 10%;
+    bottom: 10%;
+    left: 10%;
+    right: 10%;
+    background: rgba(255, 255, 255, .6);
+    border: 3px solid black;
+    border-radius: 30px;
+    box-shadow: 10px 20px 50px black;
+    visibility: none;
+}
+.setingTL{
+    margin: 100px 20px;
+    font-size: 40px;
+}
+.setingWBERK{
+    margin: 20px 0;
+}
+.setingWBtn{
+    font-size: 50px;
+    border: 2px solid black;
+    border-radius: 25px;
+    padding: 10px 50px;
+    margin: 0 30px;
+}
+.setingERKBtn{
+    font-size: 50px;
+    border: 2px solid black;
+    border-radius: 25px;
+    padding: 10px 15px;
+    margin: 0 10px;
+}
+
+
+
+
+
+
+
+.bodyRen{
+    margin: 25px;
+    background: black;
+    transition: .5s;
+}
+.menuHRen{
+    position: cticky;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+    background: black;
+    font-size: 45px;
+    border: 3px solid white;
+    border-radius: 25px;
+    transition: .5s;
+}
