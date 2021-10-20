@@ -1,0 +1,66 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 90vh;
+    background: gainsboro;
+}
+.calculation{
+    background: white;
+    width: 700px;
+    height: 1000px;
+    padding: 20px;
+    font-size: 50px;
+    text-align: center;
+    align-items: center;
+    background: gainsboro;
+    justify-content: center;
+    border-radius: 20px;
+    box-shadow: 5px 5px 20px rgb(150, 150, 150),10px 10px 30px rgb(150, 150, 150), -5px -5px 20px white, -10px -10px 30px white;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+.calculation .value{
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    margin: 20px;
+    padding: 15px 0;
+    font-size: 80px;
+    background: gainsboro;
+    grid-column-start: 1;
+    grid-column-end: 5;
+    text-align: right;
+    position: relative;
+    box-shadow: inset 5px 5px 20px rgb(150, 150, 150), inset 10px 10px 30px rgb(150, 150, 150), inset -5px -5px 20px white, inset -10px -10px 30px white;
+    border-radius: 20px;
+    
+}
+.calculation .clear{
+    grid-column-start: 1;
+    grid-column-end: 3;
+    background-color: red;
+    color: white;
+}
+.calculation .black{
+    background-color: black;
+    color: white;
+}
+.calculation .num{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px;
+    height: 90px;
+    border-radius: 20px;
+    box-shadow: 5px 5px 20px rgb(150, 150, 150),10px 10px 30px rgb(150, 150, 150), -5px -5px 20px white, -10px -10px 30px white;
+    font-weight: 900;
+}
+.calculation .num:active{
+    background: rgba(0, 0, 0, 0.2);
+    box-shadow: -1px -1px 5px rgba(0, 0, 0, 0.5);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+    border-right: 1px solid rgba(255, 255, 255, 0.5);
+}
