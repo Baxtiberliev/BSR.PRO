@@ -1,0 +1,428 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 90vh;
+}
+.pers{
+    perspective: 1000px;
+}
+.form{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    transform-style: preserve-3d;
+    animation: cubeAnime 10s linear infinite;
+}
+.form::before{
+    position: fixed;
+    content: "";
+    top: 600px;
+    width: 150px;
+    height: 150px;
+    border-radius: 100px;
+    box-shadow: 0px 0px 20px grey, 0px 0px 50px grey, 0px 0px 100px grey;
+    background: grey;
+    transform: rotateX(90deg);
+}
+.form .head{
+    font-size: 5em;
+    width: 2em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+@keyframes cubeAnime{
+    from{
+        transform: rotateY(0deg);
+    }
+    to{
+        transform: rotateY(360deg);
+    }
+}
+.form .formBodyArm{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.form .formBodyLeg{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.form .head .front{
+    transform: translateZ(1em);
+    background: url("formImg/front.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    position: absolute;
+    width: 2em;
+    height: 2em;
+}
+.form .head .back{
+    transform: rotateY(-180deg) translateZ(1em);
+    background: url("formImg/back.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    position: absolute;
+    width: 2em;
+    height: 2em;
+}
+.form .head .right{
+    transform: rotateY(-90deg) translateZ(1em);
+    background: url("formImg/right.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    position: absolute;
+    width: 2em;
+    height: 2em;
+}
+.form .head .left{
+    transform: rotateY(90deg) translateZ(1em);
+    background: url("formImg/left.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    position: absolute;
+    width: 2em;
+    height: 2em;
+}
+.form .head .top{
+    transform: rotateX(90deg) translateZ(1em);
+    background: url("formImg/top.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    position: absolute;
+    width: 2em;
+    height: 2em;
+}
+.form .head .bottom{
+    transform: rotateX(-90deg) translateZ(1em);
+    background: url("formImg/bottom.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    position: absolute;
+    width: 2em;
+    height: 2em;
+}
+.form .formBodyArm .body{
+    font-size: 5em;
+    width: 1em;
+    margin-top: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform-style: preserve-3d;
+}
+.form .formBodyArm .body .front{
+    transform: translateZ(0.5em) translateY(100px);
+    background: url("formImg/bodyFront.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    position: absolute;
+    width: 2em;
+    height: 3em;
+}
+.form .formBodyArm .body .back{
+    transform: rotateY(-180deg) translateZ(0.5em) translateY(100px);
+    background: url("formImg/bodyBack.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    position: absolute;
+    width: 2em;
+    height: 3em;
+}
+.form .formBodyArm .body .right{
+    transform: rotateY(-90deg) translateZ(1em) translateY(100px);
+    background: url("formImg/bodyRight.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    position: absolute;
+    width: 1em;
+    height: 3em;
+}
+.form .formBodyArm .body .left{
+    transform: rotateY(90deg) translateZ(1em) translateY(100px);
+    background: url("formImg/bodyLeft.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    position: absolute;
+    width: 1em;
+    height: 3em;
+}
+.form .formBodyArm .body .top{
+    transform: rotateX(90deg) translateZ(20px) ;
+    background: url("formImg/bodyTop.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    position: absolute;
+    width: 2em;
+    height: 1em;
+}
+.form .formBodyArm .body .bottom{
+    transform: rotateX(-90deg) translateZ(220px);
+    background: url("formImg/bodyBottom.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    position: absolute;
+    width: 2em;
+    height: 1em;
+}
+.form .formBodyArm .armRight{
+    font-size: 5em;
+    width: 1em;
+    margin-top: 100px;
+    margin-right: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform-style: preserve-3d;
+}
+.form .formBodyArm .armRight .front{
+    transform: translateZ(0.5em) translateY(100px);
+    background: url("formImg/armFront.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    position: absolute;
+    width: 1em;
+    height: 3em;
+}
+.form .formBodyArm .armRight .back{
+    transform: rotateY(-180deg) translateZ(0.5em) translateY(100px);
+    background: url("formImg/armBack.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    position: absolute;
+    width: 1em;
+    height: 3em;
+}
+.form .formBodyArm .armRight .right{
+    transform: rotateY(-90deg) translateZ(0.5em) translateY(100px);
+    background: url("formImg/armRight.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    position: absolute;
+    width: 1em;
+    height: 3em;
+}
+.form .formBodyArm .armRight .left{
+    transform: rotateY(90deg) translateZ(0.5em) translateY(100px);
+    background: url("formImg/armLeft.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    position: absolute;
+    width: 1em;
+    height: 3em;
+}
+.form .formBodyArm .armRight .top{
+    transform: rotateX(90deg) translateZ(20px);
+    background: url("formImg/armTop.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    position: absolute;
+    width: 1em;
+    height: 1em;
+}
+.form .formBodyArm .armRight .bottom{
+    transform: rotateX(-90deg) translateZ(220px);
+    background: url("formImg/armBottom.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    position: absolute;
+    width: 1em;
+    height: 1em;
+}
+.form .formBodyArm .armLeft{
+    font-size: 5em;
+    width: 1em;
+    margin-top: 100px;
+    margin-left: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform-style: preserve-3d;
+}
+.form .formBodyArm .armLeft .front{
+    transform: translateZ(0.5em) translateY(100px) scaleX(-1);
+    background: url("formImg/armFront.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    position: absolute;
+    width: 1em;
+    height: 3em;
+}
+.form .formBodyArm .armLeft .back{
+    transform: rotateY(-180deg) translateZ(0.5em) translateY(100px) scaleX(-1);
+    background: url("formImg/armBack.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    position: absolute;
+    width: 1em;
+    height: 3em;
+}
+.form .formBodyArm .armLeft .right{
+    transform: rotateY(90deg) translateZ(0.5em) translateY(100px) scaleX(-1);
+    background: url("formImg/armRight.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    position: absolute;
+    width: 1em;
+    height: 3em;
+}
+.form .formBodyArm .armLeft .left{
+    transform: rotateY(-90deg) translateZ(0.5em) translateY(100px) scaleX(-1);
+    background: url("formImg/armLeft.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    position: absolute;
+    width: 1em;
+    height: 3em;
+}
+.form .formBodyArm .armLeft .top{
+    transform: rotateX(90deg) translateZ(20px) scaleX(-1);
+    background: url("formImg/armTop.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    position: absolute;
+    width: 1em;
+    height: 1em;
+}
+.form .formBodyArm .armLeft .bottom{
+    transform: rotateX(-90deg) translateZ(220px) scaleX(-1);
+    background: url("formImg/armBottom.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    position: absolute;
+    width: 1em;
+    height: 1em;
+}
+.form .formBodyLeg .legRight{
+    font-size: 5em;
+    width: 1em;
+    margin-top: 240px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform-style: preserve-3d;
+}
+.form .formBodyLeg .legRight .front{
+    transform: translateZ(0.5em) translateY(100px);
+    background: url("formImg/legFront.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    position: absolute;
+    width: 1em;
+    height: 3em;
+}
+.form .formBodyLeg .legRight .back{
+    transform: rotateY(-180deg) translateZ(0.5em) translateY(100px);
+    background: url("formImg/legBack.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    position: absolute;
+    width: 1em;
+    height: 3em;
+}
+.form .formBodyLeg .legRight .right{
+    transform: rotateY(-90deg) translateZ(0.5em) translateY(100px);
+    background: url("formImg/legRight.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    position: absolute;
+    width: 1em;
+    height: 3em;
+}
+.form .formBodyLeg .legRight .left{
+    transform: rotateY(90deg) translateZ(0.5em) translateY(100px);
+    background: url("formImg/legLeft.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    position: absolute;
+    width: 1em;
+    height: 3em;
+}
+.form .formBodyLeg .legRight .top{
+    transform: rotateX(90deg) translateZ(20px);
+    background: url("formImg/legTop.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    position: absolute;
+    width: 1em;
+    height: 1em;
+}
+.form .formBodyLeg .legRight .bottom{
+    transform: rotateX(-90deg) translateZ(220px);
+    background: url("formImg/legBottom.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    position: absolute;
+    width: 1em;
+    height: 1em;
+}
+.form .formBodyLeg .legLeft{
+    font-size: 5em;
+    width: 1em;
+    margin-top: 240px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform-style: preserve-3d;
+}
+.form .formBodyLeg .legLeft .front{
+    transform: translateZ(0.5em) translateY(100px) scaleX(-1);
+    background: url("formImg/legFront.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    position: absolute;
+    width: 1em;
+    height: 3em;
+}
+.form .formBodyLeg .legLeft .back{
+    transform: rotateY(-180deg) translateZ(0.5em) translateY(100px) scaleX(-1);
+    background: url("formImg/legBack.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    position: absolute;
+    width: 1em;
+    height: 3em;
+}
+.form .formBodyLeg .legLeft .right{
+    transform: rotateY(90deg) translateZ(0.5em) translateY(100px) scaleX(-1);
+    background: url("formImg/legRight.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    position: absolute;
+    width: 1em;
+    height: 3em;
+}
+.form .formBodyLeg .legLeft .left{
+    transform: rotateY(-90deg) translateZ(0.5em) translateY(100px) scaleX(-1);
+    background: url("formImg/legLeft.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    position: absolute;
+    width: 1em;
+    height: 3em;
+}
+.form .formBodyLeg .legLeft .top{
+    transform: rotateX(90deg) translateZ(20px) scaleX(-1);
+    background: url("formImg/legTop.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    position: absolute;
+    width: 1em;
+    height: 1em;
+}
+.form .formBodyLeg .legLeft .bottom{
+    transform: rotateX(-90deg) translateZ(220px) scaleX(-1);
+    background: url("formImg/legBottom.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    position: absolute;
+    width: 1em;
+    height: 1em;
+}
