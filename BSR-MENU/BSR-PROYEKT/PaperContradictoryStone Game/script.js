@@ -78,5 +78,5 @@ if (botEmojiSet === 0) {
         botVar.style.visibility = "hidden"
         playerVar.style.visibility = "hidden"
         botEmoji.src = 'img/emojiFonSmile.gif'
-    }, 2000)
+    }, 10000)
 }
