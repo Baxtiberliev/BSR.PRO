@@ -14,8 +14,7 @@ function btnB() {
     playerVar.src = 'img/B.png'
     playerVar.style.visibility = "visible"
     setTimeout(function() {
-        playerVar.style.visibility = "hidden"
-        playerVar.className = ''
+        playerVar.style.visibility = "hidden'
     }, 2000);
 }
 
@@ -25,7 +24,6 @@ function btnN() {
     playerVar.style.visibility = "visible"
     setTimeout(function() {
         playerVar.style.visibility = "hidden"
-        playerVar.className = ''
     }, 2000);
 }
 
@@ -35,7 +33,6 @@ function btnK() {
     playerVar.style.visibility = "visible"
     setTimeout(function() {
         playerVar.style.visibility = "hidden"
-        playerVar.alt = ''
     }, 2000);
 }
 
@@ -51,27 +48,22 @@ function playerBtn() {
 
 
 if (botEmojiSet === 0) {
-    botEmoji.src = 'img/emojiAwkward.gif'
+    botEmoji.src = "img/emojiAwkward.gif"
 }else if (botEmojiSet === 1) {
-    botEmoji.src = 'img/emojiOh.gif'
+    botEmoji.src = "img/emojiOh.gif"
 }else if (botEmojiSet === 2) {
-    botEmoji.src = 'img/emojiSad.gif'
+    botEmoji.src = "img/emojiSad.gif"
 }else if (botEmojiSet === 3) {
-    botEmoji.src = 'img/emojiThink.gif'
+    botEmoji.src = "img/emojiThink.gif"
 }else if (botEmojiSet === 4) {
-    botEmoji.src = 'img/emojiCompression.gif'
+    botEmoji.src = "img/emojiCompression.gif"
 }else if (botEmojiSet === 5) {
-    botEmoji.src = 'img/emojiGreat.gif'
+    botEmoji.src = "img/emojiGreat.gif"
 }else if (botEmojiSet === 6) {
-    botEmoji.src = 'img/emojiLeprosy.gif'
+    botEmoji.src = "img/emojiLeprosy.gif"
 }else if (botEmojiSet === 7) {
-    botEmoji.src = 'img/emojiSmile.gif'
+    botEmoji.src = "img/emojiSmile.gif"
 }
-
-
-setTimeout(function() {
-    botEmoji.src = 'img/emojiFonSmile.gif'
-}, 2000);
 
 
 
@@ -101,5 +93,6 @@ setTimeout(function() {
     btnHid.style.visibility = 'hidden'
     setTimeout(function() {
         btnHid.style.visibility = 'visible'
+        botEmoji.src = "img/emojiFonSmile.gif"
     }, 2000)
 }
